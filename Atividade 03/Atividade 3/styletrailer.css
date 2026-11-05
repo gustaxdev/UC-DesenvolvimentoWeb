@@ -1,0 +1,131 @@
+/* Fonte do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap');
+
+/* Corpo */
+body {
+    background: linear-gradient(90deg, #350909, #101b46, #350909);
+    color: #eeeeee;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 25px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+    color: #ffd166;
+    text-align: center;
+}
+
+h1 {
+    background: linear-gradient(90deg, #650000, #b91c1c, #102c68);
+    color: #ffe4a0;
+    font-size: 40px;
+    padding: 30px 15px;
+    border-bottom: 3px solid #ffd166;
+    border-radius: 12px;
+    animation: descer 1s;
+}
+
+h2 {
+    border-bottom: 2px solid #c51b2b;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+ul, ol {
+    line-height: 2;
+}
+
+.destaque {
+    background: linear-gradient(135deg, rgba(150, 20, 30, 0.35), rgba(15, 35, 85, 0.55));
+    border: 2px solid #d4a72c;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 25px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+a {
+    color: #ffd166;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #b91c1c;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+a:hover {
+    color: white;
+    background-color: #a71919;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 3px solid #b91c1c;
+}
+
+::selection {
+    background-color: #a71919;
+    color: white;
+}
+
+.centro {
+    text-align: center;
+}
+
+.centro iframe {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border: 3px solid #ffd166;
+    border-radius: 12px;
+}
+
+@keyframes descer {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+}

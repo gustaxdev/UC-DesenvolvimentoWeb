@@ -1,0 +1,372 @@
+/* Fonte do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap');
+
+/* Corpo */
+body {
+    background: linear-gradient(90deg, #350909, #101b46, #350909);
+    color: #eeeeee;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 25px;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    font-family: "Orbitron", sans-serif;
+    color: #ffd166;
+    text-align: center;
+}
+
+h1 {
+    background: linear-gradient(90deg, #650000, #b91c1c, #102c68);
+    color: #ffe4a0;
+    font-size: 40px;
+    padding: 30px 15px;
+    border-bottom: 3px solid #ffd166;
+    border-radius: 12px;
+    animation: descer 1s;
+}
+
+h2 {
+    border-bottom: 2px solid #c51b2b;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+/* Parágrafos e listas */
+p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+ul,
+ol {
+    line-height: 2;
+}
+
+/* Caixa de destaque */
+.destaque {
+    background: linear-gradient(135deg, rgba(150, 20, 30, 0.35), rgba(15, 35, 85, 0.55));
+    border: 2px solid #d4a72c;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 25px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Imagens */
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* Links */
+a {
+    color: #ffd166;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #b91c1c;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+a:hover {
+    color: white;
+    background-color: #a71919;
+}
+
+/* Menu */
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 14px;
+    background-color: #090f25;
+    z-index: 10;
+}
+
+/* Mentor e aprendiz: FLEXBOX */
+.historia {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.historia img {
+    width: 50%;
+    min-height: 340px;
+
+    border: 3px solid #b91c1c;
+}
+
+.historia-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+}
+
+.historia-texto .destaque {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 25px;
+    font-size: 19px;
+    max-width: 85%;
+    text-align: center;
+}
+
+.historia-texto ul.destaque {
+    list-style-position: inside;
+
+}
+
+/* Cards: GRID */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    position: relative;
+    background: linear-gradient(145deg, rgba(120, 15, 25, 0.35), rgba(15, 35, 85, 0.5));
+    border: 1px solid #a82020;
+    border-radius: 15px;
+    overflow: hidden;
+    animation: aparecer 1.5s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card-texto {
+    padding: 15px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Hover no card */
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #ffd166;
+    box-shadow: 0 10px 25px black;
+}
+
+/* Etiqueta do ano */
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 12px;
+    font-weight: bold;
+    background-color: #173b83;
+    border: 1px solid #ffd166;
+    border-radius: 20px;
+}
+
+.linha-do-tempo-texto {
+    list-style: none;
+    position: relative;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px 25px 25px 40px;
+    line-height: 1.6;
+    background: linear-gradient(135deg, rgba(150, 20, 30, 0.35), rgba(15, 35, 85, 0.55));
+    border: 2px solid #d4a72c;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.linha-do-tempo-texto li {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.linha-do-tempo-texto li::before {
+    content: "→";
+    position: absolute;
+    left: -35px;
+    top: 0;
+    color: #ffd166;
+    font-size: 22px;
+}
+
+.linha-do-tempo-texto .ano {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffd166;
+    letter-spacing: 1px;
+}
+
+
+.linha-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.lateral {
+    width: 22%;
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.linha-layout .linha-do-tempo-texto {
+    flex: 1;
+    max-width: none;
+    margin: 0;
+}
+
+.lateral {
+    animation: flutuar 4s linear infinite;
+}
+
+.lateral:last-child {
+    animation-delay: -2s;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        animation-timing-function: ease-out;
+    }
+
+    25% {
+        transform: translateY(-16px);
+        box-shadow: 0 0 25px rgba(255, 209, 102, 0.6);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translateY(0);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        animation-timing-function: ease-out;
+    }
+
+    75% {
+        transform: translateY(16px);
+        box-shadow: 0 0 25px rgba(5, 116, 241, 0.6);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Rodapé: FLEXBOX */
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 3px solid #b91c1c;
+}
+
+.topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 16px;
+    background-color: #090f25;
+    z-index: 20;
+}
+
+/* Cor ao selecionar o texto */
+::selection {
+    background-color: #a71919;
+    color: white;
+}
+
+/* Animações */
+@keyframes descer {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Tablet: telas de até 900px */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Celular: telas de até 600px */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .historia {
+        flex-direction: column;
+    }
+
+    .historia img,
+    .historia-texto {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+}

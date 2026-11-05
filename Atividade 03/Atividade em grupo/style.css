@@ -1,0 +1,100 @@
+/*Configuração para tirar a bordar geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #10131b;
+    color: #f1f1f1;
+}
+
+header {
+    background-color: #171c27;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #e63946;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;
+}
+
+/*Título principal*/
+h1 {
+    color: #e63946;
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header img {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 420px;
+    border-radius: 12px;
+}
+
+body > p,
+section {
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px;
+    font-size: 17px;
+}
+
+section {
+    background-color: #191f2b;
+    padding: 28px;
+    border-radius: 12px;
+    border-left: 4px solid #e63946;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 1);
+}
+
+h2 {
+    color: #ff5964;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 14px;
+    padding-left: 5px;
+}
+
+b {
+    color: #ffffff;
+}
+
+p a {
+    color: #66b5ff;
+    font-weight: bold;
+}
+
+/*Configuração do pé do site, tamanho, cor, borda*/
+footer {
+    background-color: #080a10;
+    border-top: 3px solid #1769aa;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 50px;
+}
+
+footer nav {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #a0a8b8;
+    font-size: 14px;
+}

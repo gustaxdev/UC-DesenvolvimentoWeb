@@ -1,0 +1,171 @@
+
+/* Fonte do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* Corpo */
+body {
+    background: linear-gradient(135deg, #090909, #250707, #100505);
+    color: #eeeeee;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 25px;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5 {
+    font-family: "Orbitron", sans-serif;
+    color: #ffd166;
+    text-align: center;
+    text-shadow: 0 0 12px rgba(255, 190, 50, 0.3);
+}
+
+h1 {
+    background: linear-gradient(90deg, #650000, #c51b1b, #650000);
+    color: #ffe4a0;
+    font-size: 42px;
+    padding: 35px 15px;
+    margin: 20px 0 35px;
+    border-bottom: 3px solid #dcae42;
+    border-radius: 12px;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 15px;
+    margin: 40px 0 20px;
+    border-bottom: 2px solid #a82020;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 30px 0 15px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+/* Paragráfos */
+p {
+    color: #dedede;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.9;
+    margin: 20px;
+    padding: 15px;
+}
+
+/* Listas */
+ol {
+    color: #eeeeee;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    line-height: 2;
+    padding: 20px;
+}
+
+ul {
+    color: #eeeeee;
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 2;
+    padding: 20px;
+}
+
+p, ol, ul, h1, h2, h3, h4, h5 {
+    text-shadow: 
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;  
+}
+
+h1, h2, h3, h4, h5 {
+    border: 2px solid gold;
+    padding: 10px;
+    border-radius: 8px;
+}
+a{
+    border: 2px solid gold;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+/* Destaques */
+.destaque {
+    background-color: rgba(120, 15, 15, 0.2);
+    border-left: 4px solid #e4b548;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 25px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Img principal */
+#imagem-principal {
+    border: 3px solid #d6a943;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(220, 35, 35, 0.3);
+}
+
+/* Img amigos tony starl */
+#imagem-amigos {
+    border: 3px solid #8f2525;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(220, 35, 35, 0.3);
+}
+
+/* Tds imagens */
+img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.07);
+}
+
+/* links */
+a {
+    color: #ffd166;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #e63939;
+}
+
+/* Video */
+video {
+    display: block;
+    width: 900px;
+    max-width: 100%;
+    margin: 35px auto;
+    border: 2px solid #c9a33b;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(180, 20, 20, 0.25);
+}
+
+.container{
+    text-align: center;
+}
+
+/* Cor ao selecionar o texto */
+::selection {
+    background-color: #a71919;
+    color: white;
+}
