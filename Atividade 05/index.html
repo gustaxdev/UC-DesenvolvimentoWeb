@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        form {
+            background-color: rgb(65, 65, 65);
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            background-color: rgb(35, 35, 35);
+            color: white;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+
+        .preenchimento {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .genero {
+            background-color: white;
+            color: rgb(30, 30, 30);
+            width: 150px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 7px;
+        }
+
+        button {
+            background-color: #666;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #a58a8a;
+        }
+
+        @media (max-width: 450px) {
+            form {
+                width: 85%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formulario de Dados</h1>
+    <form>
+        <div class="preenchimento">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <br>
+        <div class="preenchimento">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+        </div>
+        <br>
+        <div class="preenchimento">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" minlength="5" maxlength="20" placeholder="fulano1234@"
+                required>
+        </div>
+        <br>
+        <div class="preenchimento">
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+        </div>
+        <br>
+        <div class="preenchimento">
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" name="curso" required>
+        </div>
+        <br>
+        <div class="genero">
+            <p>Sexo</p>
+            <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="sexo" required>
+            <br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="sexo" required>
+            <br>
+            <label for="outro">Outro</label>
+            <input type="radio" id="outro" name="sexo" required>
+        </div>
+        <br>
+        <div class="preenchimento">
+            <label for="interesses">Interesses</label>
+            <input type="text" id="interesses" name="interesses" required>
+        </div>
+        <br>
+        <div class="preenchimento">
+            <label for="comentarios">Comentários</label>
+            <input type="text" id="comentarios" name="comentarios" required>
+        </div>
+        <br>
+        <div class="preenchimento">
+            <label for="uploadFoto">Upload da Foto</label>
+            <input type="file" id="uploadFoto" name="uploadFoto" required>
+        </div>
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>
